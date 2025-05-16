@@ -105,5 +105,6 @@
     "doc": {
       "basename": "/lexical-image/"
     }
-  }
+  },
+  "version": "0.1.0"
 }
