@@ -2,6 +2,7 @@
 
 exports[`members match snapshot 1`] = `
 {
+  "ImageNode": [Function],
   "ImagePlugin": [Function],
 }
 `;
