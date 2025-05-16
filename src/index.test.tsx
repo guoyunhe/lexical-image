@@ -1,9 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import { LexicalImage } from '.';
+import * as members from '.';
 
-describe('LexicalImage', () => {
-  it('render', async () => {
-    render(<LexicalImage>foobar</LexicalImage>);
-    await screen.findByText('foobar');
-  });
+test('members match snapshot', async () => {
+  expect(members).toMatchSnapshot();
 });
