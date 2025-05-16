@@ -62,6 +62,8 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@lexical/react": "^0.31.1",
+    "@lexical/rich-text": "^0.31.1",
+    "@lexical/utils": "^0.31.1",
     "@mdx-js/react": "^3.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.3.0",
@@ -93,6 +95,8 @@
   },
   "peerDependencies": {
     "@lexical/react": "^0.31.1",
+    "@lexical/rich-text": "^0.31.1",
+    "@lexical/utils": "^0.31.1",
     "lexical": "^0.31.1",
     "react": ">=16.8.0"
   },
