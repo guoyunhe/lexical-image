@@ -10,6 +10,7 @@ export interface ImageComponentProps
 
 export default function ImageComponent({ nodeKey, className, ...props }: ImageComponentProps) {
   const [isSelected, setSelected] = useLexicalNodeSelection(nodeKey);
+
   return (
     <img
       className={c(
@@ -17,7 +18,8 @@ export default function ImageComponent({ nodeKey, className, ...props }: ImageCo
         isSelected && 'lexical-image-component-selected',
         className,
       )}
-      onClick={() => {
+      onClick={(e) => {
+        e.stopPropagation();
         setSelected(true);
       }}
       {...props}
