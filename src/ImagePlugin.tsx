@@ -11,7 +11,7 @@ import {
   LexicalCommand,
 } from 'lexical';
 import { useEffect, useRef } from 'react';
-import { $createImageNode } from './$createImageNode';
+import $createImageNode from './$createImageNode';
 import ImageNode from './ImageNode';
 import ImageInfo from './private/ImageInfo';
 
