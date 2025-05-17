@@ -107,5 +107,8 @@
     "doc": {
       "basename": "/lexical-image/"
     }
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
   }
 }

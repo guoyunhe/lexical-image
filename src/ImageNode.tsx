@@ -11,6 +11,7 @@ import {
 import { JSX } from 'react';
 import $convertImageElement from './$convertImageElement';
 import $createImageNode from './$createImageNode';
+import ImageComponent from './private/ImageComponent';
 import ImageInfo from './private/ImageInfo';
 
 export type SerializedImageNode = Spread<ImageInfo, SerializedLexicalNode>;
@@ -106,6 +107,14 @@ export default class ImageNode extends DecoratorNode<JSX.Element> {
   }
 
   decorate(): JSX.Element {
-    return <img src={this.__src} alt={this.__alt} width={this.__width} height={this.__width} />;
+    return (
+      <ImageComponent
+        src={this.__src}
+        alt={this.__alt}
+        width={this.__width}
+        height={this.__width}
+        nodeKey={this.__key}
+      />
+    );
   }
 }
