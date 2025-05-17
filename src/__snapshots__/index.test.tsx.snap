@@ -2,6 +2,9 @@
 
 exports[`members match snapshot 1`] = `
 {
+  "$convertImageElement": [Function],
+  "$createImageNode": [Function],
+  "$isImageNode": [Function],
   "ImageNode": [Function],
   "ImagePlugin": [Function],
 }
