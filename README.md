@@ -5,7 +5,7 @@ Minimum image insert functionality for [Lexical](https://lexical.dev/), based on
 ## Install
 
 ```bash
-npm i -S lexical @lexical/react lexical-image
+npm i -S lexical @lexical/react @lexical/html lexical-image
 ```
 
 ## Usage
