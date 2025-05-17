@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3 - 2025-05-17
+
+- Fixed `ImageNode` copy & paste
+
 ## 0.2.2 - 2025-05-17
 
 - Fixed `ImageNode` height

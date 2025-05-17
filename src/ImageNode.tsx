@@ -65,8 +65,8 @@ export default class ImageNode extends DecoratorNode<JSX.Element> {
     if (this.__width) {
       element.width = this.__width;
     }
-    if (this.__width) {
-      element.width = this.__width;
+    if (this.__height) {
+      element.height = this.__height;
     }
     if (this.__alt) {
       element.alt = this.__alt;
