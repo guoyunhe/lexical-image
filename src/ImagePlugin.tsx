@@ -7,17 +7,12 @@ import {
   $isRootOrShadowRoot,
   COMMAND_PRIORITY_EDITOR,
   COMMAND_PRIORITY_LOW,
-  createCommand,
-  LexicalCommand,
 } from 'lexical';
 import { useEffect, useRef } from 'react';
 import $createImageNode from './$createImageNode';
 import ImageNode from './ImageNode';
+import INSERT_IMAGE_COMMAND from './INSERT_IMAGE_COMMAND';
 import ImageInfo from './private/ImageInfo';
-
-export const INSERT_IMAGE_COMMAND: LexicalCommand<ImageInfo> =
-  createCommand('INSERT_IMAGE_COMMAND');
-export const UPLOAD_IMAGE_COMMAND: LexicalCommand<{}> = createCommand('UPLOAD_IMAGE_COMMAND');
 
 const ACCEPTABLE_IMAGE_TYPES = ['image/', 'image/heic', 'image/heif', 'image/gif', 'image/webp'];
 
@@ -59,6 +54,7 @@ export default function ImagePlugin({ upload }: ImagePluginProps) {
         COMMAND_PRIORITY_LOW,
       ),
 
+      // Insert images
       editor.registerCommand<ImageInfo>(
         INSERT_IMAGE_COMMAND,
         (payload) => {

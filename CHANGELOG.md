@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0 - 2025-05-17
+
+- Added `INSERT_IMAGE_COMMAND` command export
+
 ## 0.2.3 - 2025-05-17
 
 - Fixed `ImageNode` copy & paste
@@ -22,5 +26,5 @@
 
 ## 0.1.0 - 2025-05-16
 
-- Added `ImageNode`
-- Added `ImagePlugin`
+- Added `ImageNode` node
+- Added `ImagePlugin` plugin

@@ -5,6 +5,9 @@ exports[`members match snapshot 1`] = `
   "$convertImageElement": [Function],
   "$createImageNode": [Function],
   "$isImageNode": [Function],
+  "INSERT_IMAGE_COMMAND": {
+    "type": "INSERT_IMAGE_COMMAND",
+  },
   "ImageNode": [Function],
   "ImagePlugin": [Function],
 }
