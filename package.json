@@ -61,6 +61,10 @@
       "stylelint-prettier/recommended"
     ]
   },
+  "dependencies": {
+    "@lexical/utils": "^0.31.1",
+    "classnames": "^2.5.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
@@ -107,9 +111,5 @@
     "doc": {
       "basename": "/lexical-image/"
     }
-  },
-  "dependencies": {
-    "@lexical/utils": "^0.31.1",
-    "classnames": "^2.5.1"
   }
 }
