@@ -11,7 +11,7 @@ import {
 } from 'lexical';
 import { JSX } from 'react';
 import { $createImageNode } from './$createImageNode';
-import ImageInfo from './ImageInfo';
+import ImageInfo from './private/ImageInfo';
 
 function $convertImageElement(domNode: Node): null | DOMConversionOutput {
   const img = domNode as HTMLImageElement;

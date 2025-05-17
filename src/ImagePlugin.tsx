@@ -12,8 +12,8 @@ import {
 } from 'lexical';
 import { useEffect, useRef } from 'react';
 import { $createImageNode } from './$createImageNode';
-import ImageInfo from './ImageInfo';
 import ImageNode from './ImageNode';
+import ImageInfo from './private/ImageInfo';
 
 export const INSERT_IMAGE_COMMAND: LexicalCommand<ImageInfo> =
   createCommand('INSERT_IMAGE_COMMAND');
