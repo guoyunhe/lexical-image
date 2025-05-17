@@ -1,6 +1,6 @@
 {
   "name": "lexical-image",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Minimum image insert functionality for Lexical, based on Lexical Playground.",
   "homepage": "https://github.com/guoyunhe/lexical-image#readme",
   "bugs": {
