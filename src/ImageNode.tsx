@@ -1,7 +1,6 @@
 import {
   DecoratorNode,
   DOMConversionMap,
-  DOMConversionOutput,
   DOMExportOutput,
   EditorConfig,
   LexicalUpdateJSON,
@@ -10,18 +9,9 @@ import {
   Spread,
 } from 'lexical';
 import { JSX } from 'react';
+import $convertImageElement from './$convertImageElement';
 import $createImageNode from './$createImageNode';
 import ImageInfo from './private/ImageInfo';
-
-function $convertImageElement(domNode: Node): null | DOMConversionOutput {
-  const img = domNode as HTMLImageElement;
-  if (img.src.startsWith('file:///')) {
-    return null;
-  }
-  const { alt, src, width, height } = img;
-  const node = $createImageNode({ alt, height, src, width });
-  return { node };
-}
 
 export type SerializedImageNode = Spread<ImageInfo, SerializedLexicalNode>;
 

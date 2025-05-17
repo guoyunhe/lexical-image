@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added `$convertImageElement` function export
 - Added `$createImageNode` function export
 - Added `$isImageNode` function export
 
