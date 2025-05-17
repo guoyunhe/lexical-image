@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 - 2025-05-17
+
+- Fixed `ImageNode` height
+
 ## 0.2.1 - 2025-05-17
 
 - Fixed `ImageNode` select on click

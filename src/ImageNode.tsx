@@ -112,7 +112,7 @@ export default class ImageNode extends DecoratorNode<JSX.Element> {
         src={this.__src}
         alt={this.__alt}
         width={this.__width}
-        height={this.__width}
+        height={this.__height}
         nodeKey={this.__key}
       />
     );
