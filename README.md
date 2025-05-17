@@ -16,7 +16,10 @@ import { LexicalComposer } from '@lexical/react/LexicalComposer';
 import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin';
 import { ContentEditable } from '@lexical/react/LexicalContentEditable';
 import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin';
+import { EditorRefPlugin } from '@lexical/react/LexicalEditorRefPlugin';
+import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin';
 import { LexicalErrorBoundary } from '@lexical/react/LexicalErrorBoundary';
+import { $generateHtmlFromNodes } from '@lexical/html';
 import { ImageNode, ImagePlugin } from 'lexical-image';
 
 const toBase64 = (file) =>
@@ -28,6 +31,8 @@ const toBase64 = (file) =>
   });
 
 function App() {
+  const editorRef = React.useRef(null);
+
   return (
     <LexicalComposer
       initialConfig={{
@@ -60,6 +65,15 @@ function App() {
         />
         <HistoryPlugin />
         <AutoFocusPlugin />
+        <EditorRefPlugin editorRef={editorRef} />
+        <OnChangePlugin
+          onChange={() => {
+            editorRef.current.read(() => {
+              const html = $generateHtmlFromNodes(editorRef.current);
+              console.log(html);
+            });
+          }}
+        />
         <ImagePlugin
           upload={async (file) => {
             // Do NOT use base64 in any real projects!
