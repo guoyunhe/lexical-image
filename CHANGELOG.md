@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1 - 2025-05-27
+
+- Fixed zero width and height of pasted image
+
 ## 0.3.0 - 2025-05-17
 
 - Added `INSERT_IMAGE_COMMAND` command export

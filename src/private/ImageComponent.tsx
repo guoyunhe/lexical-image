@@ -8,7 +8,13 @@ export interface ImageComponentProps
   nodeKey: NodeKey;
 }
 
-export default function ImageComponent({ nodeKey, className, ...props }: ImageComponentProps) {
+export default function ImageComponent({
+  nodeKey,
+  className,
+  width,
+  height,
+  ...props
+}: ImageComponentProps) {
   const [isSelected, setSelected] = useLexicalNodeSelection(nodeKey);
 
   return (
@@ -22,6 +28,8 @@ export default function ImageComponent({ nodeKey, className, ...props }: ImageCo
         e.stopPropagation();
         setSelected(true);
       }}
+      width={width || undefined}
+      height={height || undefined}
       {...props}
     />
   );
